@@ -120,8 +120,7 @@ export const CustomerList = ({
             You&apos;ll Give:
           </p>
           <p className="flex justify-center items-center font-medium text-gray-700">
-            ₹{dashboardData?.youWillGave}
-          </p>
+          ₹{Number(dashboardData?.youWillGave).toLocaleString()}          </p>
           <p className="flex justify-center items-center text-green-500 ">
             <GoArrowUpRight />
           </p>
@@ -132,8 +131,7 @@ export const CustomerList = ({
             You&apos;ll Get:
           </p>
           <p className="flex justify-center items-center font-medium text-gray-700">
-            ₹{dashboardData?.youWillGet * -1}
-          </p>
+          ₹{Number(dashboardData?.youWillGet * -1).toLocaleString()}</p>
           <p className="flex justify-center items-center text-red-500 ">
             <GoArrowDownLeft />
           </p>
